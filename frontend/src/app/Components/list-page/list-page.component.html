@@ -1,0 +1,4 @@
+<h2 *ngIf="apis.count > 0">Output:</h2>
+<ol *ngIf="apis.count > 0">
+    <li class="item" *ngFor="let entry of apis.entries">{{ entry.api + ' ' + entry.category + ' ' + entry.description }}</li>
+</ol>
